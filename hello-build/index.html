@@ -1,0 +1,73 @@
+<!-- doc is always in html doc type declaration-->
+<!DOCTYPE html>
+<!-- html tag - lang is language attribute for indexability and search engines indexing and browser compatility and browser translations -->
+<html lang="en">
+    <head>
+        <!-- head is not for content - will not be displayed in the viewport / page -->
+        <!-- metadata describes data -->
+        <!-- meta tells browser how to use and display symbols and can be useful to make it display on Google search results -->
+        <meta charset="utf-8">
+        <title>Hello Build</title>
+        
+        <!-- Links to Sylesheets -->
+        <!-- reset codes clear the browser defaults, so many different browsers all start in a "stripped down" fashion -->
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+    <body>
+        <!-- dom is a tree with related nodes - Document Object Model -->
+        <!-- div is a non semantic container that lets us hook css and html, kicks things down and adds its own space -->
+        <!-- div is a block level element -->
+        <div class="container">
+            <!-- group similar content together -->
+            <header>
+                <!-- put a heading -->
+                <h1>Hello.</h1>
+                <!-- This is our flex container. -->
+                <div>
+                    <p>I <span>design</span> and <span>develop</span> for the web.</p>
+                    <!-- the hastag (#) prevents us from going anywhere -->
+                    <a href="#">Hire Me.</a>
+                </div>
+            </header>
+            <main>
+                <!-- draw of the show -->
+                <!-- alt text needs to be displayed in case image does not load, for accessibility and Search Engine Optimization (SEO) -->
+                <!-- title tag - when we hover around the image, the title attribute will pop up -->
+                <div class="col">
+                    <img src="img/speech-bubble.png" alt="Stylized Speech Bubble" title="UwU">
+                    <h2>Contact</h2>
+                    <ul>
+                        <li>Email</li>
+                        <li>Twitter</li>
+                        <li>LinkedIn</li>
+                        <li>Facebook</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <img src="img/keyboard-img.png" alt="Simplified Cartoon Keyboard" title="OwO">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>HTML 5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>UI Design</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <img src="img/quality-img.png" alt="Award Winning Ribbon" title="NwO">
+                    <h2>My Work</h2>
+                    <ul>
+                        <li>Fast</li>
+                        <li>Responsive</li>
+                        <li>Intuitive</li>
+                        <li>Dynamic</li>
+                    </ul>
+                </div>
+            </main>
+            <footer>
+                <p>Copyright &copy; 2021 For Education Purposes Only.</p>
+            </footer>
+        </div>
+    </body>
+</html>

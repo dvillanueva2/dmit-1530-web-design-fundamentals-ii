@@ -1,0 +1,82 @@
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+section {
+    /* add padding, change the font size */
+    padding: 3rem; /* 1 rem = 16px */
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
+}
+
+/* 
+    :nth-child selectors
+    
+    This selects elements based on their
+    position as a child within its parent
+    element.
+*/
+
+section:first-child {
+    background-color: crimson;
+}
+
+section:last-child {
+    background-color: steelblue;
+}
+
+section:only-child {
+    background-color: whitesmoke;
+    color: darkslategrey;
+}
+
+section:nth-child(2) {
+    background-color: tomato;
+}
+
+section:nth-child(3) {
+    background-color: khaki;
+}
+
+/* 
+    :nth-last-child()
+
+    Work the same as :nth-child(), but we
+    start counting backwards from the end
+*/
+
+section:nth-last-child(3) {
+    background-color: lightgreen;
+}
+
+section:nth-last-child(2) {
+    background-color: lightseagreen;
+}
+
+/*
+    :nth-of-type()
+
+    This will grab the nth-number of its type.
+    So, if we have elements breaking up a
+    sequence, the selector will ignore the other
+    elements and keep counting.
+*/
+
+p:first-of-type {
+    font-family: sans-serif;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+p:last-of-type {
+    font-family: fantasy;
+    font-size: 1rem;
+}
+
+p:nth-of-type(2) {
+    display: none;
+    opacity: 0;
+}

@@ -1,0 +1,56 @@
+body {
+	background-color: #434a54;
+	color: white;
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+h1 {
+	font-size: 64px;
+	font-weight: 400;
+	text-align: center;
+	padding-bottom: 32px;
+}
+
+div p {
+	font-size: 18px;
+	font-weight: 300;
+	margin: 16px;
+	padding: 16px;
+}
+
+section {
+	padding: 32px;
+}
+
+section div:nth-child(2) p {
+	background-color: #d93041;
+}
+
+section div:nth-child(2) p:nth-child(1) {
+	flex: 1;
+}
+
+section div:nth-child(2) p:nth-child(2) {
+	flex: 4;
+}
+
+section div:nth-child(2) p:nth-child(3) {
+	flex: 2;
+}
+
+section div:nth-child(3) p {
+	background-color: #f6bb42;
+}
+
+section div:nth-child(4) p {
+	background-color: #2e79db;
+}
+
+section div:nth-child(3) p:nth-child(2) {
+	font-size: 30px;
+}
+
+.flex-row {
+	display: flex;
+	justify-content: center;
+}

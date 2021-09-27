@@ -1,0 +1,27 @@
+body {
+    background-color: #fafafa;
+    color: #13293d;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container div {
+    margin: 2rem;
+}
+
+div.absolute {
+    padding: 16px;
+    border: 4px double #13293d;
+    font-size: 16px;
+}
+
+div.relative {
+    padding: 1rem;
+    border: 0.25rem double #13293d;
+    font-size: 1rem;
+}

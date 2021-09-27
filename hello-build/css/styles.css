@@ -1,0 +1,105 @@
+body {
+    background-color: #edf2f7;
+    /* use Arial font and use default sans-serif font as a fallback stack */
+    font-family: Arial, sans-serif;
+}
+
+/* wraps all content */
+.container {
+    /* easily divisble by 1 3 6 8 10 12 */
+    /* so the 960px width specifies the size of the space we're working on? ---> YES */
+    width: 960px;
+    /* we are not defining the size of the margins of the container - auto matically divides the space of the two sides - container will be centered */
+    margin: 0 auto;
+    font-size: 100%;
+    line-height: 1.5;
+}
+
+header,
+main div,
+footer {
+    background-color: white;
+    /* vertical margins - we want to avoid vertical margin collapse - only apply in one direction */
+    margin-top: 40px;
+}
+
+header {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 70px;
+}
+
+h1 {
+    color: #63b3ed;
+    font-size: 125px;
+}
+
+header p {
+    color: #8594ad;
+    font-size: 32px;
+    padding-right: 20px;
+}
+
+/* applies the blue color to the span and the h1 elements */
+h1,
+header p span {
+    color: #63b3ed;
+}
+
+header a {
+    color: white;
+    font-size: 24px;
+    background-color: #dd6b20;
+    border: 2px solid #dd6b20;
+    /* content inside border */
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* changes colors when hire me button is hovered on by a cursor */
+header a:hover {
+    color: #a0aec0;
+    background-color: white;
+    /* lines */
+}
+
+header div {
+    /* line up two things side by side using flexbox. we need to select the direct parent */
+    /* p and a will be displayed side by side */
+    display: flex;
+    justify-content: center;
+}
+
+main,
+footer {
+    color: #68778d;
+}
+
+main {
+    display: flex;
+    /* evenly halves spaces. no more calculating! */
+    justify-content: space-between;
+    text-align: center;
+}
+
+/* any second element inside of main  */
+/* main.h2 - affects main with a class name of h2 */
+main h2 {
+    font-size: 32px;
+}
+
+ul {
+    font-size: 18px;
+    list-style-type: none;
+    padding: 0;
+}
+
+footer {
+    /* top-bottom 20 px left-right */
+    padding: 20px 30px;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+/* justify-content only adjusts flex items */

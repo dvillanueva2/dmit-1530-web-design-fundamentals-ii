@@ -1,0 +1,39 @@
+body {
+    background-color: #91a66f;
+}
+
+h1,
+figcaption {
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+}
+
+figcaption {
+    padding: 20px;
+}
+
+/* make image sizes flexible */
+img {
+    display: block;
+    /* max width of the parent container */
+    max-width: 100%;
+}
+
+
+main {
+    /* relative to the max viewport of the main window */
+    max-width: 100vw;
+}
+/* make image sizes flexible - end */
+
+/* the div becomes flex container */
+main div {
+    display: flex;
+    /* arranges flex content horizontally */
+    justify-content: space-around;
+}
+
+main div figure {
+    max-width: 48%;
+}

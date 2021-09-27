@@ -1,0 +1,8 @@
+38:00 - explanation of descendant selectors
+
+// specificity -> give a change any paragraph with ONLY a class of intro
+p.intro {
+font-weight: 800;
+}
+
+1:12
