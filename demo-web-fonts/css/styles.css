@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Secret Typewriter';
+    src: url('veteran_typewriter-webfont.woff2') format('woff2'),
+         url('veteran_typewriter-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    font-family: 'Secret Typewriter', monospace;
+    font-size: 2rem;
+    color: #3b373f;
+    background-color: dedcda;
+}
+
+h2 {
+    font-family: 'Beth Ellen', cursive;
+    color: #623f53;
+    font-size: 3rem;
+    text-align: right;
+    padding-top: 3rem;
+}
+
+
+p {
+    /* I only want 60 characters per line - ch = characters */
+    width: 60ch;
+}
+
+p:last-of-type {
+    padding-top: 2rem;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
