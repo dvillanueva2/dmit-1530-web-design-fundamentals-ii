@@ -1,0 +1,60 @@
+body {
+    background: url('../img/barber-supplies-webp.webp') center / cover no-repeat;
+    text-align: center;
+    color: white;
+    font-family: 'Josefin Slab', serif;
+}
+
+/* TYPOGRAPHIC STYLES */
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem; /* adjust space between letters */
+    padding: 3rem 0;
+    text-shadow: 1px 1px 2px black;
+}
+
+h2 {
+    padding-bottom: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+/* LAYOUT STYLES */
+section > div {
+    display: flex;
+}
+
+div.col {
+    /* pay attention to this - below may be used for buttons */
+    background-color: rgba(0,0,0,0.7);
+    padding: 2rem;
+    margin: 0 0.5rem;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 1rem;
+    
+    /* Flex Property 
+    This is the shorthand property for
+    flex-grow, flex-shrink, and flex-basis.
+    */
+    
+    flex: 1 1 0; /* same as width: calc(100%/4) */
+}
+
+div.col:nth-child(1) {
+    /* will not work because the content in the items will not have enough space for them to be squished further */
+    flex: 1 2 0;
+}
+
+div.col:nth-child(3) {
+    flex: 2 1 0; 
+}
+
+/* flex: int, int, int 
+    where int, int, int is flex-grow, flex-shrink, flex-basis
+*/
+
