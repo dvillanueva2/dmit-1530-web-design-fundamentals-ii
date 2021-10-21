@@ -1,0 +1,74 @@
+/* We'll start with our universal or more generic styles, which will apply to all wide screen widths (unless it's overwritten by a media query
+*/
+
+body {
+    font-family: 'Avenir Next', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    line-height: 3rem;
+}
+
+header {
+    background-color: #212121;
+    border-bottom: 2px solid teal;
+}
+
+a {
+    color: #faf7ff;
+    text-decoration: none;
+}
+
+.flex {
+    padding: 1rem;
+}
+
+nav ul {
+    margin: auto;
+    text-align: center;
+    padding-left: 0;
+}
+
+nav ul li {
+    border-bottom: 1px solid teal;
+    /* brings delay / fading to the background */
+    transition: all 0.5s ease;
+}
+
+/* remove the border-bottom from the last child*/
+
+nav ul li:last-child {
+    border-bottom: none;
+}
+
+nav ul li:hover {
+    background-color: teal;
+}
+
+/* 
+    Here we are using a media query to see if our screen is wide enough to accomodate our list of links.
+*/
+
+@media screen and (min-width: 890px) {
+    .flex {
+        display: flex;
+        /* horizontally align */
+        justify-content: space-between;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        border: none;
+        /* not end right on the words */
+        padding: 0 1.4rem;
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .flex {
+        margin: auto;
+        max-width: 1400px;
+    }
+}

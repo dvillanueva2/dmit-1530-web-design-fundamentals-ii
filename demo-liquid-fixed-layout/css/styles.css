@@ -78,5 +78,9 @@ footer {
     header {
         padding: unset; /* removes the header padding */
     }
+
+    h1 {
+        padding: 0;
+    }
 }
 

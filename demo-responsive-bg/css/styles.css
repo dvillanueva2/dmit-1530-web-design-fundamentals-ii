@@ -16,22 +16,37 @@ header {
 
     /* Mobile / Smallest Background - center the image and cover the container as we stretch the viewport */
     background: url('../img/small-bg.webp') center bottom / cover no-repeat;
+    
 }
 
 h1 {
-    font-size: 2.5rem;
+    /* adjusting header font size without doing media query --> 2.5rem + 2percent of the viewport width */
+    font-size: calc(2.5rem + 2vw);
     text-align: center;
     color: white;
     text-shadow: 1px 1px 2px black;
+    
 }
 
 main {
     padding: 5vh;
     display: flex;
+    flex-flow: column;
 }
 
 main section {
     height: 30vh;
+    /* hack to allow the h2's to center accordingly */
+    display: flex;
+    /* x axis */
+    justify-content: center;
+    /* y axis */
+    align-items: center;
+}
+
+main section h2 {
+    color: white;
+    text-align: center;
 }
 
 section:first-of-type {
@@ -40,8 +55,40 @@ section:first-of-type {
 
 section:nth-of-type(2) {
     background-color: #334839;
+    order: -1;
 }
 
 section:last-of-type {
     background-color: #315002;
+}
+
+/* MEDIA QUERY */
+@media screen and (min-width: 920px) {
+    main {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    main section {
+        width: 31%;
+    }
+
+    section:nth-of-type(2) {
+        order: 0;
+    }
+
+    header {
+        background: url('../img/medium-bg.webp') center bottom / cover no-repeat;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    header {
+        background: url('../img/large-bg.webp') center bottom / cover no-repeat;
+    }
+
+    /* restrict the width to prevent everyting from expanding */
+
+    
+    
 }
