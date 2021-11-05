@@ -1,0 +1,104 @@
+/* Initializing our CSS Variables / Custom Properties */
+:root {
+    --off-black: #323232;
+    --mid-grey: #e8e8e8;
+    --dark-grey: #718096;   
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    color: var(--off-black);
+}
+
+/* Helper Classes */
+.container {
+    padding: 4rem 0.4rem;
+}
+
+.flex-container {
+    display: flex;
+    align-items: flex-start;
+    /* default is stretch,allowing the same height. don't have enough heigt, and set to the top 18:00 of video */
+}
+
+.center-align {
+    align-items: center;
+}
+
+/* Layout */
+.card {
+    max-width: 23.75rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    border: 1px solid var(--mid-grey);
+    border-radius: 0.4rem;
+    box-shadow: 3px 3px 5px var(--mid-grey);
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin-bottom: 3rem;
+}
+
+p {
+    font-size: 0.875rem;
+    color: #67768c;
+    margin-bottom: 1.5rem;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+svg {
+    width: 1rem;
+    margin: 0 0.6rem; /* visual separation */
+}
+
+svg path {
+    fill: var(--dark-grey);
+}
+
+.card-footer p {
+    margin: 0;
+}
+
+.card-footer img {
+    width: 2.5rem;
+    margin-right: 0.6rem;
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 720px) {
+    
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* The card is 720px wide */
+    .card {
+        display: flex;
+        max-width: 45rem;
+    }
+
+    /* The picture is 200px wide */
+    /* 200px / 720 = 0.27778 */
+    picture {
+        flex-basis: 27.78%;
+    }
+
+    /* The body copy is 520px wide */
+    .card-body {
+        max-width: 72.22%;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .container {
+        max-width: 1500px;
+        margin: auto;
+    }
+
+}
+
