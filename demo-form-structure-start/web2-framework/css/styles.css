@@ -1,0 +1,63 @@
+/* Helper Classes */
+
+.container {
+    max-width: 80rem;
+    margin: auto;
+}
+
+/* Universal Styles */
+body {
+    color: #222;
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #222;
+    padding: 2rem;
+    margin-bottom: 3rem;
+}
+
+h1 {
+    color: #fff;
+    font-size: 5rem;
+    text-align: center;
+}
+
+main {
+    font-size: 1.8rem;
+}
+
+/* Form Styles */
+form {
+    max-width: 60rem;
+    margin: auto;
+}
+
+label {
+    display: block; /* the labels will now be above everything */
+}
+
+input {
+    width: 50rem;
+}
+
+form div,
+fieldset {
+    margin-bottom: 3rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: initial;
+}
+
+label[for="chocolate"],
+label[for="vanilla"],
+label[for="strawberry"],
+label[for="markup"],
+label[for="styles"],
+label[for="scripts"],
+label[for="back-end"] {
+    display: inline;
+}
