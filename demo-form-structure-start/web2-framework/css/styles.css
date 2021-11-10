@@ -61,3 +61,9 @@ label[for="scripts"],
 label[for="back-end"] {
     display: inline;
 }
+
+textarea {
+    resize: vertical;
+    min-height: 5rem;
+    max-height: 20rem;
+}
